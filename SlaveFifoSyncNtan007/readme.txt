@@ -30,13 +30,6 @@ SYNCHRONOUS SLAVE FIFO PROTOCOL EXAMPLE
      the application is notified and forwards the data to the recipient
      through a DMA callback function.
 
-  Known limitation:
-  In synchronous burst access operation, the minimum transfer size to 
-  perform data read/write accesses from/to the FX3 device should be three words.
-  In 16-bit mode this is six bytes and 32-bit mode this is twelve bytes.
-  To transfer data less than this, single cycle access operation needs to 
-  be used.
-
   Files:
 
     * cyfx_gcc_startup.S   : Start-up code for the ARM-9 core on the FX3
